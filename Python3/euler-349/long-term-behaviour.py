@@ -8,9 +8,9 @@ def RunIter(number):
     print(f'{number}, {blackCount}')
     return blackCount
 
-# draw a pretty picture of the behaviour up to 20k iterations
-(colours, _, _) = Run(20000)
-Draw(colours, '/home/tom/Workspace/Euler/walk.bmp')
+# draw a pretty picture of the behaviour up to 11k iterations
+(colours, walk, _) = Run(11000)
+Draw(colours, walk, '/home/tom/Workspace/Euler/walk.bmp')
 
 # spit out a csv of iteration to # black squares so we can graph it
 for i in range(1000, 100000, 1000):
